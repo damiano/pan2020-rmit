@@ -14,4 +14,5 @@ print(entities)
 displacy.serve(post,style="ent")
 # sudo lsof -i:5000
 #kill number
-#html=displacy.render(post,style='ent',page=True)
+#when using jupyter note book:
+#html=displacy.render(post,style='ent',jupyter=True) 
