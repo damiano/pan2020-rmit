@@ -16,6 +16,12 @@ X = df_amazon['verified_reviews']
 ylabels =df_amazon['feedback']
 
 X_train, X_test, y_train, y_test = train_test_split(X, ylabels, test_size=0.3)
+#read the data
+#cross validation 
+#ten fold validation 10pieces each of the loop 
+#300 instaces 
+#10-fold cross validation: 10 times 270 training, 30 test
+#leave-one-out: 300 times, 299 training, 1 test
 
 classifier = LogisticRegression()
 
@@ -32,4 +38,11 @@ print(metrics.recall_score(y_test,predicted))
 
 
 #what is ngram_range
+
+#a set of twitters
+#put all the text together
+
+#task
+#read everything
+#combine all the xml file
 
