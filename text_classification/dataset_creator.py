@@ -8,7 +8,7 @@ def create_dataset():
             array = line.split(":::")
             user = array[0]
             posts= read_twitters(user+".xml")
-            truth =bool(int(array[1][0]))
+            truth =int(array[1][0])
             set.append([user,posts,truth])     
     return set
     

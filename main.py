@@ -45,10 +45,3 @@ print(metrics.recall_score(y_test,predicted))
 
 #what is ngram_range
 
-#a set of twitters
-#put all the text together
-
-#task
-#read everything
-#combine all the xml file
-
