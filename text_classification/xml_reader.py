@@ -1,7 +1,7 @@
 from xml.dom.minidom import parse
 import xml.dom.minidom
 
-
+#read from xml and combine all the tweets together, then return a string
 
 def read_twitters(x):
     s=""""""
@@ -12,5 +12,3 @@ def read_twitters(x):
         s+=document.firstChild.wholeText
     return s    
 
-s = read_twitters("0dwovd7nj6yg9m795ng2c629me0ccmrh.xml")  
-print(s)      
