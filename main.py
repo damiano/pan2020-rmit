@@ -16,7 +16,6 @@ X = df_amazon['twitters']
 ylabels =df_amazon['truth']
 
 X_train, X_test, y_train, y_test = train_test_split(X, ylabels, test_size=0.1)
-#read the data
 #cross validation 
 #ten fold validation 10pieces each of the loop 
 #300 instaces 
