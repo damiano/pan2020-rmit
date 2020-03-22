@@ -8,7 +8,7 @@ from text_classification.spacytokenizer import spacy_tokenizer
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 
-df_amazon = pd.read_csv("dataset/amazon_alexa.tsv",sep="\t")
+dwaf_amazon = pd.read_csv("dataset/amazon_alexa.tsv",sep="\t")
 bow_vector = CountVectorizer(tokenizer = spacy_tokenizer, ngram_range=(1,1))  
 tfid_vector = TfidfVectorizer(tokenizer = spacy_tokenizer)  
 
@@ -22,8 +22,15 @@ X_train, X_test, y_train, y_test = train_test_split(X, ylabels, test_size=0.3)
 #300 instaces 
 #10-fold cross validation: 10 times 270 training, 30 test
 #leave-one-out: 300 times, 299 training, 1 test
+#extract the features
 
 classifier = LogisticRegression()
+#function much more complicated
+#try classifier
+
+# exrat 
+# weight the word
+# a couple of the slides
 
 pipe = Pipeline([("cleaner", predictors()),
                 ('vectorizer',bow_vector),
