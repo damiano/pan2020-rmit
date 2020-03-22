@@ -1,4 +1,5 @@
-from xml_reader import read_twitters
+from text_classification.xml_reader import read_twitters
+import pandas as pd
 
 def create_dataset():
     set =[]
@@ -8,8 +9,11 @@ def create_dataset():
             user = array[0]
             posts= read_twitters(user+".xml")
             truth =bool(int(array[1][0]))
-            set.append([user,posts,truth])
+            set.append([user,posts,truth])     
     return set
-
-set = create_dataset()
-print(set)
+    
+def get_pandas():
+    set = create_dataset()
+    dataSet = pd.DataFrame(set)
+    dataSet.columns=['user','twitters','truth']
+    return dataSet

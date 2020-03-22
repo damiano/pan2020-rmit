@@ -1,21 +1,21 @@
-import pandas as pd
 import spacy
 from sklearn.feature_extraction.text import CountVectorizer,TfidfVectorizer
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from text_classification.predictors import predictors
 from text_classification.spacytokenizer import spacy_tokenizer
+from text_classification.dataset_creator import get_pandas
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 
-dwaf_amazon = pd.read_csv("dataset/amazon_alexa.tsv",sep="\t")
+df_amazon = get_pandas()
 bow_vector = CountVectorizer(tokenizer = spacy_tokenizer, ngram_range=(1,1))  
 tfid_vector = TfidfVectorizer(tokenizer = spacy_tokenizer)  
 
-X = df_amazon['verified_reviews']
-ylabels =df_amazon['feedback']
+X = df_amazon['twitters']
+ylabels =df_amazon['truth']
 
-X_train, X_test, y_train, y_test = train_test_split(X, ylabels, test_size=0.3)
+X_train, X_test, y_train, y_test = train_test_split(X, ylabels, test_size=0.1)
 #read the data
 #cross validation 
 #ten fold validation 10pieces each of the loop 
