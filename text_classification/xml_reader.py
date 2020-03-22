@@ -5,7 +5,7 @@ import xml.dom.minidom
 
 def read_twitters(x):
     s=""""""
-    DOMTree = parse("data/en/%s" % x)
+    DOMTree = parse("text_classification/data/en/%s" % x)
     collection =DOMTree.documentElement
     documents = DOMTree.getElementsByTagName("document")
     for document in documents:
