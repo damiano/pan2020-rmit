@@ -9,13 +9,16 @@ from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 
 df_amazon = get_pandas()
-bow_vector = CountVectorizer(tokenizer = spacy_tokenizer, ngram_range=(1,1))  
+#bow_vector = CountVectorizer(tokenizer = spacy_tokenizer, ngram_range=(1,1))  
 tfid_vector = TfidfVectorizer(tokenizer = spacy_tokenizer)  
+#tokenizer
+#tf_id
 
 X = df_amazon['twitters']
 ylabels =df_amazon['truth']
 
-X_train, X_test, y_train, y_test = train_test_split(X, ylabels, test_size=0.1)
+X_train, X_test, y_train, y_test = train_test_split(X, ylabels, test_size=0.1,shuffle=False)
+#shuffle
 #cross validation 
 #ten fold validation 10pieces each of the loop 
 #300 instaces 
@@ -32,12 +35,13 @@ classifier = LogisticRegression()
 # a couple of the slides
 
 pipe = Pipeline([("cleaner", predictors()),
-                ('vectorizer',bow_vector),
+                ('vectorizer',tfid_vector),
                 ('classifier', classifier)])
 
 pipe.fit(X_train,y_train)
 
 predicted = pipe.predict(X_test)
+
 print(metrics.accuracy_score(y_test,predicted))
 print(metrics.precision_score(y_test,predicted))
 print(metrics.recall_score(y_test,predicted))
@@ -45,3 +49,15 @@ print(metrics.recall_score(y_test,predicted))
 
 #what is ngram_range
 
+# talking area user
+# basic things 
+# bert
+# diversity of people and totic
+#classification
+
+#add other features
+#refine the vectorizer
+#repeat 10 times 10 fold validation
+
+# basic analysis(how many twitters of 0,1)
+# avaernumber of words in 
