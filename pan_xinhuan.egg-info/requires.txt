@@ -1,4 +1,0 @@
-numpy
-vaderSentiment
-torch
-spacy
