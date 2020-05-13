@@ -9,7 +9,7 @@ class admin:
         self.input= input_folder
         self.output= output
         f = []
-        for (dirpath, dirnames, filenames) in walk(input_folder):
+        for (dirpath, dirnames, filenames) in walk(input_folder+'/en'):
             f.extend(filenames)
             break
         self.files =f
@@ -20,7 +20,7 @@ class admin:
     def write_file(self,filename):
         
         user_id=filename.split(".")[0]
-        self.user.set_name(user_id, self.l.read_single(self.input + '/' +filename))
+        self.user.set_name(user_id, self.l.read_single(self.input + '/en/' +filename))
         arr = self.user.tweet_sentiment()
         result = self.predictor.pridict_user(arr)
         write_author(self.user.name, 'en', str(result[0]), self.output + '/' + 'en')
