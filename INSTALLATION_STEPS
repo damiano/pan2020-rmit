@@ -4,5 +4,8 @@ conda create -n pan-2020
 conda activate pan-2020
 conda install pip
 pip install -r requirements-min.txt
-pip uninstall pyinstaller
-pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip
+##only if we need pyinstaller:
+#pip uninstall pyinstaller
+#pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip
+
+python main.py -i example_input
