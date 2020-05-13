@@ -14,6 +14,7 @@ setup(
         'vaderSentiment',
         'torch',
         'spacy',
-          
+        "pandas", 
+        "torchtext", "sklearn"          
     ]
 )

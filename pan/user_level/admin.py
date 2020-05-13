@@ -29,9 +29,10 @@ class admin:
         directories = ['en', 'es']
         parent_dir = self.output  
         for directory in directories:
-            path = os.path.join(parent_dir, directory) 
-            os.mkdir(path) 
-            print("Directory '% s' created" % directory) 
+            path = os.path.join(parent_dir, directory)
+            if not os.path.isdir(path):
+              os.mkdir(path) 
+              print("Directory '% s' created" % directory) 
             
     def start(self):
         self.create_folder()

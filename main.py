@@ -21,7 +21,8 @@ def main(args=None):
             inputfile = arg
         elif opt in ("-o", "--ofile"):
             outputfile = arg
-    
+    print("Input file:", inputfile)
+    print("Output file:", outputfile)    
     ad=admin(inputfile,outputfile)        
     ad.start()
 if __name__ == '__main__':

@@ -4,7 +4,8 @@ import pickle
 class tweet_predictor:
     def __init__(self):
         self.cuda = torch.device('cuda' if torch.cuda.is_available() else 'cpu')  
-        self.model = torch.load('Data/final_model.pt')
+      
+        self.model = torch.load('Data/final_model.pt', map_location=self.cuda)
         self.model.eval()
         self.vocab = pickle.load(open('Data/file.txt','rb'))
     def predict_sentiment(self,sentence):    
