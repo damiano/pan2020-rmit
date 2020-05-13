@@ -1,0 +1,8 @@
+#Python version: 3.8.2
+#pip version: 20.0.2
+conda create -n pan-2020
+conda activate pan-2020
+conda install pip
+pip install -r requirements-min.txt
+pip uninstall pyinstaller
+pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip
