@@ -3,6 +3,12 @@ Repository for RMIT participation at the "Profiling Fake News Spreaders on Twitt
 
 run the software and make the prediction
 
+#Installation
+If you haven't install the package need b
+```bash
+python3 -m pip install -r requirement.txt
+```
+
 #usage
 
 ```bash
