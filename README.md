@@ -25,7 +25,7 @@ After downloding the data, put them copy and paste the en and es folder into the
 ```bash
 python3 modelTrainer.py
 ```
-here you can get a tweet-level model which can predict whether a user is a fake news spreader or not.
+Then you can get a tweet-level model which can predict whether a user is a fake news spreader or not.
 
 
 ## reprodece the user-profile level 
