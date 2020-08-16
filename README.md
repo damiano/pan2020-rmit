@@ -8,6 +8,8 @@ cd path-to-your-repositrary
 Then you are ready for the reproduction of our PAN2020 submission.
 
 note: if you only want to use our software you can switch the branch to software, where you can use our software directly after you have done the installation
+note: your computer should support cuda cudnn, if you haven't install cuda or cudnn, go to the following links:
+
 ## Installation
 
 
@@ -19,6 +21,7 @@ python3 -m pip install -r requirement.txt
 ### data preparation
 The train data for our task is should not be exposed to the public according to the PAN restrictions, if you want to get access to the data, go to this link : https://pan.webis.de/clef20/pan20-web/author-profiling.html
 
+After downloding the data, put them copy and paste the en and es folder into the relative path /text_classification/data
 ```bash
 python3 modelTrainer.py
 ```
