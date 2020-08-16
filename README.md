@@ -1,6 +1,10 @@
 # pan2020-rmit
 Repository for RMIT participation at the "Profiling Fake News Spreaders on Twitter" at PAN @ CLEF 2020
+firstly dowload the files from the github
 
+```bash
+cd 
+```
 ## Installation
 
 ```bash
