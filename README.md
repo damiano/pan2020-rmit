@@ -17,7 +17,7 @@ python3 -m pip install -r requirement.txt
 
 ## reproduce the TLSP
 ### data preparation
-The train data for our task is should not be exposed to the public according to the PAN restrictions, if you want to get access to the data, you can go to this link : https://pan.webis.de/clef20/pan20-web/author-profiling.html
+The train data for our task is should not be exposed to the public according to the PAN restrictions, if you want to get access to the data, go to this link : https://pan.webis.de/clef20/pan20-web/author-profiling.html
 
 ```bash
 python3 modelTrainer.py
