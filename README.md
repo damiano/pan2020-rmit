@@ -9,14 +9,16 @@ Then you are ready for the reproduction of our PAN2020 submission.
 
 note: if you only want to use our software you can switch the branch to software, where you can use our software directly after you have done the installation
 ## Installation
-### data preparation
-The train data for our task is should not be exposed to the public according to the PAN restrictions, if you want to get access to the data, you can go to this link : https://pan.webis.de/clef20/pan20-web/author-profiling.html
+
 
 ```bash
 python3 -m pip install -r requirement.txt
 ```
 
 ## reproduce the TLSP
+### data preparation
+The train data for our task is should not be exposed to the public according to the PAN restrictions, if you want to get access to the data, you can go to this link : https://pan.webis.de/clef20/pan20-web/author-profiling.html
+
 ```bash
 python3 modelTrainer.py
 ```
