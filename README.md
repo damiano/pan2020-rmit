@@ -1,10 +1,13 @@
 # pan2020-rmit
 Repository for RMIT participation at the "Profiling Fake News Spreaders on Twitter" at PAN @ CLEF 2020
-firstly dowload the files from the github
+Dowload the files from the github
 
 ```bash
-cd 
+cd path-to-your-repositrary
 ```
+Then you are ready for the reproduction of our PAN2020 submission.
+
+note: if you only want to use our software you can switch the branch to software, where you can use our software directly after you have done the installation
 ## Installation
 
 ```bash
