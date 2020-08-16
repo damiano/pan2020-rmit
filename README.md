@@ -9,7 +9,7 @@ Then you are ready for the reproduction of our PAN2020 submission.
 
 note: if you only want to use our software you can switch the branch to software, where you can use our software directly after you have done the installation
 ## Installation
-
+### data preparation
 ```bash
 python3 -m pip install -r requirement.txt
 ```
