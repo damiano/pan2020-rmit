@@ -22,10 +22,13 @@ python3 -m pip install -r requirement.txt
 The train data for our task is should not be exposed to the public according to the PAN restrictions, if you want to get access to the data, go to this link : https://pan.webis.de/clef20/pan20-web/author-profiling.html
 
 After downloding the data, put them copy and paste the en and es folder into the relative path /text_classification/data
+
+### train a single model
+
 ```bash
 python3 modelTrainer.py
 ```
-Then you can get a tweet-level model which can predict whether a user is a fake news spreader or not.
+In the folder you can then see a new file:"BERT-model.pt", which is a tweet-level model which can predict whether a user is a fake news spreader or not.
 
 
 ## reprodece the user-profile level 
