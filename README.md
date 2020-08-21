@@ -61,8 +61,8 @@ In the folder you can then see a new file:"BERT-model.pt", which is a tweet-leve
 python3 main.py
 ```
 
-<# Reproducing preliminary results
+<!-- # Reproducing preliminary results
 *TO-DO*
 The script produce a confusion matrix with the 10-fold cross-validation results in the paper. 
 The result of tweet-level prediction model is already done and written on the csv files, this process is only reading from the csv files and do the cross validation)
->
+-->
