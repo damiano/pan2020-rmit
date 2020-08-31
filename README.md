@@ -1,4 +1,4 @@
-# RMIT at PAN-CLEF 2020: Profiling Fake NewsSpreaders on Twitter
+# RMIT at PAN-CLEF 2020: Profiling Fake News Spreaders on Twitter
 
 Implementation of our system submitted to the "Profiling Fake News Spreaders on Twitter" at PAN @ CLEF 2020
 
@@ -55,6 +55,7 @@ python3 modelTrainer.py
 In the folder you can then see a new file:"BERT-model.pt", which is a tweet-level model which can predict whether a user is a fake news spreader or not.
 
 
+
 ## Build the profile-level model
 
 ```bash
@@ -66,3 +67,9 @@ python3 main.py
 The script produce a confusion matrix with the 10-fold cross-validation results in the paper. 
 The result of tweet-level prediction model is already done and written on the csv files, this process is only reading from the csv files and do the cross validation)
 -->
+
+
+### Contact
+
+For more information, please contact the first author Xinhuan Duan: [s3713321@student.rmit.edu.au](mailto:s3713321@student.rmit.edu.au)
+
