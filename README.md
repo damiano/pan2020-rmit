@@ -55,12 +55,35 @@ python3 modelTrainer.py
 In the folder you can then see a new file:"BERT-model.pt", which is a tweet-level model which can predict whether a user is a fake news spreader or not.
 
 
+### reproduce a 10-fold validation
+
+Since this project contains of both tweet-level and user level classifiction, So when implementing a 10-fold validation, the data trained on the tweet-level and user-profile level should be the same data. So the 10 fold validation is implemented manually. All the users together with their tweets are divided into 10 folds and they are saved in 10 csv file. The in the file modelTrainer, the method train_model() can do the 10 fold validation. 
+
+
 
 ## Build the profile-level model
 
 ```bash
 python3 main.py
 ```
+
+The script can produce a confusion matrix with the 10 fold validation result in the paper, and the features extracted from the user-level are already done and written with csv files in the  path:
+```bash
+csvs/3rd/user0-user9
+```
+
+and in main.py file line 56 and 57, you can add or delete word in the columns list and you are expected to see the change of the performance
+
+```bash
+  columns = ['median_score','mean_score','score_std','median_compound','mean_compound','compound_std','emoji','hash',
+               'hash_median','hash_std','url','url_median','url_std']
+```
+you can edit my useer csv and add your customed value to do the evaluation or you can even use the function in line 58 to add a new data
+
+```bash
+  columns =assemble(columns,'trump')
+```
+
 
 <!-- # Reproducing preliminary results
 *TO-DO*
