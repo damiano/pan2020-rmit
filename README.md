@@ -1,6 +1,7 @@
 # RMIT at PAN-CLEF 2020: Profiling Fake News Spreaders on Twitter
 
 Implementation of our system submitted to the "Profiling Fake News Spreaders on Twitter" at PAN @ CLEF 2020
+This is the final version for our reaserch, where we do the code refactor and add some more functions.
 
 
 ## Citation
