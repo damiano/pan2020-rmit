@@ -7,7 +7,7 @@ Implementation of our system submitted to the "Profiling Fake News Spreaders on 
 
 If you use this resource, please cite our paper:
 
-*Xinhuan Duan, Elham Naghizade, Damiano Spina, and Xiuzhen Zhang. 2020. RMIT at PAN-CLEF 2020: Profiling Fake News Spreaders on Twitter. In CLEF 2020 Labs and Workshops, Notebook Papers. CEUR-WS.org (Sep 2020).*
+*Xinhuan Duan, Elham Naghizade, Damiano Spina, and Xiuzhen Zhang. 2020. [RMIT at PAN-CLEF 2020: Profiling Fake News Spreaders on Twitter](https://www.damianospina.com/publication/duan-2020-rmit/). In CLEF 2020 Labs and Workshops, Notebook Papers. CEUR-WS.org (Sep 2020).*
 
 ### BibTeX
 
